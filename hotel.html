@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "hotel.css">
+    </head>
+    <body>
+        <script src = "newHotel.js"></script>
+        <div id = "titleBar">
+            <center>
+            <p id = 'title'>The Morgue</p>
+            </center>
+        </div>
+        <h2 id = "addHeader">Check In / Check Out</h2>
+        <div id = "addBox">
+            <center>
+            <h2>Guest Name:</h2>
+            <input type = "text" id = "guestAdd">
+            <h2>Room:</h2>
+            <input type = "number" id = "roomAdd">
+            <br>
+            <br>
+            <button onclick = "addGuest()">Add Body to Room</button>
+            </center>
+        </div>
+        <div id = "removeBox">
+            <center>
+            <h2>Guest to be removed:</h2>
+            <input type = "text" id = "guestRemove">
+            <h2>Room to be removed from:</h2>
+            <input type = "number" id = "roomRemove">
+            <br>
+            <br>
+            <button onclick = "removeGuest()">Remove Body from Room</button>
+            </center>
+        </div>
+        <div id = "rooms">
+            <div class = "inLine">
+                <center>
+                <h3>Room 1</h3>
+                </center>
+                <ol id = "roomOne">
+                </ol>
+                <p id = "oneFull"></p>
+            </div>
+            <div class = "inLine">
+                <center>
+                <h3>Room 2</h3>
+                </center>
+                <ol id = "roomTwo">
+                </ol>
+                <p id = "twoFull"></p>
+            </div>
+            <div class = "inLine">
+                <center>
+                <h3>Room 3</h3>
+                </center>
+                <ol id = "roomTwo">
+                </ol>
+                <p id = "threeFull"></p>
+            </div>
+            <div class = "inLine">
+                <center>
+                <h3>Room 4</h3>
+                </center>
+                <ol id = "roomTwo">
+                </ol>
+                <p id = "fourFull"></p>
+            </div>
+        </div>
+    </body>
+</html>
