@@ -24,47 +24,63 @@
         <div id = "removeBox">
             <center>
             <h2>Guest to be removed:</h2>
-            <input type = "text" id = "guestRemove">
+            <input type = "number" id = "guestRemove">
             <h2>Room to be removed from:</h2>
             <input type = "number" id = "roomRemove">
             <br>
             <br>
             <button onclick = "removeGuest()">Remove Body from Room</button>
+            <br>
+            <button onclick = "removeAll()" id = "removal">Remove all bodies from Room</button>
             </center>
         </div>
+        <button onclick = "scrollDown()" id = "scroll">Show Death Logs</button>
         <div id = "rooms">
-            <div class = "inLine">
+            <div class = "inLine" id = "oneRoom">
                 <center>
                 <h3>Room 1</h3>
                 </center>
                 <ol id = "roomOne">
                 </ol>
-                <p id = "oneFull"></p>
             </div>
-            <div class = "inLine">
+            <div class = "inLine" id = "twoRoom">
                 <center>
                 <h3>Room 2</h3>
                 </center>
                 <ol id = "roomTwo">
                 </ol>
-                <p id = "twoFull"></p>
             </div>
-            <div class = "inLine">
+            <div class = "inLine" id = "threeRoom">
                 <center>
                 <h3>Room 3</h3>
                 </center>
-                <ol id = "roomTwo">
+                <ol id = "roomThree">
                 </ol>
-                <p id = "threeFull"></p>
             </div>
-            <div class = "inLine">
+            <div class = "inLine" id = "fourRoom">
                 <center>
                 <h3>Room 4</h3>
                 </center>
-                <ol id = "roomTwo">
+                <ol id = "roomFour">
                 </ol>
-                <p id = "fourFull"></p>
             </div>
+            <div id = "fiveRoom">
+                <center>
+                <h3>Room 5</h3>
+                </center>
+                <ol id = "roomFive">
+                </ol>
+            </div>
+            <div id = "sixRoom">
+                <center>
+                <h3>Room 6</h3>
+                </center>
+                <ol id = "roomSix">
+                </ol>
+            </div>
+        </div>
+        <div id = "log">
+            <p id = "logTitle">Death Logs</p>
         </div>
     </body>
 </html>
